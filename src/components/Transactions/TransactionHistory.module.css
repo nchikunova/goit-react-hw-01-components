@@ -1,0 +1,19 @@
+.transaction-history {
+  width: 450px;
+  /* Это свойство играет роль, когда для ячеек установлена рамка, тогда в месте стыка ячеек получится 
+  линия двойной толщины (рис. Значение collapse заставляет браузер анализировать подобные места в таблице 
+  и убирать в ней двойные линии */
+  border-collapse: collapse;
+}
+
+.transaction-history th {
+  height: 30px;
+  background-color: #1ce487;
+  border: 1px solid #75f809;
+  text-transform: uppercase;
+}
+.transaction-history td {
+  text-align: center;
+  height: 30px;
+  border: 1px solid #5be908;
+}
