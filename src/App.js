@@ -1,15 +1,15 @@
-import React from "react";
-import Profile from "./components/Profile/Profile";
-import user from "./components/Profile/user.json";
-import Statistics from "./components/Statistics/Statistics";
-import statisticalData from "./components/Statistics/statistical-data.json";
-import FriendsList from "./components/Friends/Friends";
-import friends from "./components/Friends/friends.json";
-import TransactionHistory from "./components/Transactions/TransactionHistory";
-import transactions from "./components/Transactions/transactions.json";
+import React from 'react';
+import Profile from './components/Profile/Profile';
+import user from './components/Profile/user.json';
+import Statistics from './components/Statistics/Statistics';
+import statisticalData from './components/Statistics/statistical-data.json';
+import FriendsList from './components/Friends/Friends';
+import friends from './components/Friends/friends.json';
+import TransactionHistory from './components/Transactions/TransactionHistory';
+import transactions from './components/Transactions/transactions.json';
 
 const App = () => (
-  <div className={"container"}>
+  <div className={'container'}>
     <Profile
       name={user.name}
       tag={user.tag}
