@@ -18,14 +18,16 @@ const FriendsList = ({ friends }) => {
   );
 };
 
+// Если нужен один из типов или прийдет id в виде строки, используем oneOfType.
+// id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
+// В данном случае это не нужно.
+
 FriendsList.propTypes = {
   friends: PropTypes.arrayOf(
-    PropTypes.shape(
-      {
-        id: PropTypes.number.isRequired,
-      }.isRequired,
-    ),
-  ),
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+    }),
+  ).isRequired,
 };
 
 export default FriendsList;
